@@ -20,28 +20,37 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="前言本文是 Flink SQL 系列中的一篇，更多文章请关注Flink SQL 系列文档。内容全部是原创，如有错误，欢迎铁汁们指出。另外，未经同意，不得转载。 背景业务上经常有天级别聚合，按分钟打点的需求，比如计算当天的 UV和PV，但是分钟级别打点。目前 Flink 有两种方案来支持这种需求。 老方案是 Early fire 方案，即开天级别窗口，每分钟触发一次。Early fire 用于在窗口">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3">
+<meta property="og:url" content="http://example.com/2021/09/11/3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言本文是 Flink SQL 系列中的一篇，更多文章请关注Flink SQL 系列文档。内容全部是原创，如有错误，欢迎铁汁们指出。另外，未经同意，不得转载。 背景业务上经常有天级别聚合，按分钟打点的需求，比如计算当天的 UV和PV，但是分钟级别打点。目前 Flink 有两种方案来支持这种需求。 老方案是 Early fire 方案，即开天级别窗口，每分钟触发一次。Early fire 用于在窗口">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2021/09/11/3/3.assets/c2e4c356f99e4fedc954df39c2fbadfe.png">
+<meta property="og:image" content="http://example.com/2021/09/11/3/3.assets/213cc7ac62e07e36778294528cebb66a.png">
+<meta property="og:image" content="http://example.com/2021/09/11/3/3.assets/d74ace772931300fe7ab7a27b0fc1774.png">
+<meta property="og:image" content="http://example.com/2021/09/11/3/3.assets/3c2699738f5a96677e7c1ec79f4e0731.png">
+<meta property="article:published_time" content="2021-09-11T08:52:03.000Z">
+<meta property="article:modified_time" content="2021-09-11T08:53:01.778Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/09/11/3/3.assets/c2e4c356f99e4fedc954df39c2fbadfe.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/09/11/3/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>3 | Hexo</title>
   
 
 
@@ -139,9 +148,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -157,10 +167,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/09/11/3/" class="post-title-link" itemprop="url">3</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          3
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +193,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文是 Flink SQL 系列中的一篇，更多文章请关注<a target="_blank" rel="noopener" href="https://kstack.corp.kuaishou.com/article/3998">Flink SQL 系列文档</a>。<br>内容全部是原创，如有错误，欢迎铁汁们指出。另外，未经同意，不得转载。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文是 Flink SQL 系列中的一篇，更多文章请关注<a target="_blank" rel="noopener" href="https://kstack.corp.kuaishou.com/article/3998">Flink SQL 系列文档</a>。<br>内容全部是原创，如有错误，欢迎铁汁们指出。另外，未经同意，不得转载。</p>
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>业务上经常有天级别聚合，按分钟打点的需求，比如计算当天的 UV和PV，但是分钟级别打点。目前 Flink 有两种方案来支持这种需求。</p>
 <p>老方案是 Early fire 方案，即开天级别窗口，每分钟触发一次。<br>Early fire 用于在窗口结束前以固定周期把中间结果发给下游，发出去的结果和触发的时机没有严格的对应关系。<br>基于 Early fire 机制，并没有把数据做严格的窗口划分，有如下限制：</p>
 <ol>
@@ -294,165 +303,30 @@
 <h3 id="数据按照rowtime进行严格窗口划分解决缺陷2-当天累计UV-PV类曲线作业的不可回溯"><a href="#数据按照rowtime进行严格窗口划分解决缺陷2-当天累计UV-PV类曲线作业的不可回溯" class="headerlink" title="数据按照rowtime进行严格窗口划分解决缺陷2:当天累计UV/PV类曲线作业的不可回溯"></a>数据按照rowtime进行严格窗口划分解决缺陷2:当天累计UV/PV类曲线作业的不可回溯</h3><p>Cumulate Window 算子的触发时机是确定的，每个并发都是在 Watermark 越过每分钟窗口的时间阈值时触发一次，输出当前窗口的最终累计结果，而不再一分钟的中间多次输出。且采用窗口的 EndTime 作为看板上的打点时间戳，这个方案可以保证曲线的可回溯性。</p>
 <h3 id="窗口触发时间确定解决缺陷3-看板实时维度加和与汇总不一致"><a href="#窗口触发时间确定解决缺陷3-看板实时维度加和与汇总不一致" class="headerlink" title="窗口触发时间确定解决缺陷3:看板实时维度加和与汇总不一致"></a>窗口触发时间确定解决缺陷3:看板实时维度加和与汇总不一致</h3><p>由于按分钟打点当天累计UV/PV类的需求都使用 Cumulate Window 方案，输出当前窗口的最终累计结果，而不再一分钟的中间多次输出。且采用窗口的 EndTime 作为看板上的打点时间戳。因此不需要用户修改 SQL 就可以解决该问题。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/11/t0/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/09/11/t0/" class="post-title-link" itemprop="url">t0</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-09-11 14:19:39 / Modified: 14:50:12" itemprop="dateCreated datePublished" datetime="2021-09-11T14:19:39+08:00">2021-09-11</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="T0"><a href="#T0" class="headerlink" title="T0"></a>T0</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://www.vps234.com/cloudcone-cn2-gia-usa-vps-recommend/">CloudCone推出CN2 GIA 美国VPS - 低至3美元/月</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.vps234.com/very-cheap-cn2-vps-recommend/">5款便宜CN2 VPS推荐 - 2020最新汇总</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.vps234.com/free-change-ip-cn2-vps-recommendation/">2款免费换IP CN2 VPS推荐</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.vps234.com/cheap-singapore-vps-recommendation/">2款新加坡VPS推荐 - 直连线路</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.vps234.com/">https://www.vps234.com/</a></li>
-</ul>
-<ul>
-<li><p><a target="_blank" rel="noopener" href="https://www.10besty.com/best-vps-hosting-services/">https://www.10besty.com/best-vps-hosting-services/</a></p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="http://www.10besty.com/">www.10besty.com</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.10besty.com/best-vps-hosting-services/"><strong>2020年最好的国外VPS推荐 – 十佳评测</strong></a></p>
-<p>如果你希望开展在线业务，并且在寻找一个比共享主机更强大、更稳定、更灵活的服务器，但又不想负担更高费用的专用托管服务，那么海外VPS（虚拟专用服务器）或许就是最好的选择。由于VPS主机的混合性质，其成本介于共享虚拟主机和专用服务器之间，根据你的具体需求和配置，需要承担的费用为每月$2.5~$1000不等。为了让你的选择变得更加简单，我们总结了一些最好的海外VPS。</p>
-</blockquote>
-</li>
-</ul>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/09/11/t0/" rel="prev" title="t0">
+      <i class="fa fa-chevron-left"></i> t0
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/11/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/09/11/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-09-11 14:05:27" itemprop="dateCreated datePublished" datetime="2021-09-11T14:05:27+08:00">2021-09-11</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -505,6 +379,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Early-fire-%E6%96%B9%E6%A1%88%E7%BC%BA%E7%82%B9%E5%89%96%E6%9E%90%E5%8F%8A%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-number">3.</span> <span class="nav-text">Early fire 方案缺点剖析及临时解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B71-%E8%87%AA%E5%A2%9E%E6%8C%87%E6%A0%87%E6%9B%B2%E7%BA%BF%E6%9C%89%E5%87%B9%E5%9D%91"><span class="nav-number">3.1.</span> <span class="nav-text">缺陷1:自增指标曲线有凹坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="nav-number">3.1.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-number">3.1.2.</span> <span class="nav-text">临时解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B72-%E5%BD%93%E5%A4%A9%E7%B4%AF%E8%AE%A1UV-PV%E7%B1%BB%E6%9B%B2%E7%BA%BF%E4%BD%9C%E4%B8%9A%E7%9A%84%E4%B8%8D%E5%8F%AF%E5%9B%9E%E6%BA%AF"><span class="nav-number">3.2.</span> <span class="nav-text">缺陷2:当天累计UV&#x2F;PV类曲线作业的不可回溯</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-1"><span class="nav-number">3.2.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-1"><span class="nav-number">3.2.2.</span> <span class="nav-text">临时解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B73-%E7%9C%8B%E6%9D%BF%E5%AE%9E%E6%97%B6%E7%BB%B4%E5%BA%A6%E5%8A%A0%E5%92%8C%E4%B8%8E%E6%B1%87%E6%80%BB%E4%B8%8D%E4%B8%80%E8%87%B4"><span class="nav-number">3.3.</span> <span class="nav-text">缺陷3:看板实时维度加和与汇总不一致</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-2"><span class="nav-number">3.3.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-2"><span class="nav-number">3.3.2.</span> <span class="nav-text">临时解决方案</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%88%E6%9E%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%9ACumulate-Window-%E6%96%B9%E6%A1%88"><span class="nav-number">4.</span> <span class="nav-text">终极解决方案：Cumulate Window 方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cumulate-Window-%E4%BB%8B%E7%BB%8D"><span class="nav-number">4.1.</span> <span class="nav-text">Cumulate Window 介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">4.1.1.</span> <span class="nav-text">适用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95"><span class="nav-number">4.1.2.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%8B%BF%E5%88%B0-Group-Window-%E7%9A%84-start-end%EF%BC%8Crowtime%EF%BC%8Cproctime-%E7%AD%89%E6%97%B6%E9%97%B4%EF%BC%9F"><span class="nav-number">4.1.3.</span> <span class="nav-text">如何拿到 Group Window 的 start,end，rowtime，proctime 等时间？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Demo"><span class="nav-number">4.1.4.</span> <span class="nav-text">Demo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cumulate-Window-%E4%B8%BA%E4%BD%95%E8%83%BD%E9%81%BF%E5%85%8D%E8%80%81%E6%96%B9%E6%A1%88%E7%9A%84%E4%B8%89%E4%B8%AA%E7%BC%BA%E9%99%B7"><span class="nav-number">4.2.</span> <span class="nav-text">Cumulate Window 为何能避免老方案的三个缺陷</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%87%BAAppend-%E6%B5%81%E8%80%8C%E4%B8%8D%E6%98%AF-Retract-%E6%B5%81%E8%A7%A3%E5%86%B3%E7%BC%BA%E9%99%B71-%E8%87%AA%E5%A2%9E%E6%8C%87%E6%A0%87%E6%9B%B2%E7%BA%BF%E6%9C%89%E5%87%B9%E5%9D%91"><span class="nav-number">4.2.1.</span> <span class="nav-text">输出Append 流而不是 Retract 流解决缺陷1:自增指标曲线有凹坑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%8C%89%E7%85%A7rowtime%E8%BF%9B%E8%A1%8C%E4%B8%A5%E6%A0%BC%E7%AA%97%E5%8F%A3%E5%88%92%E5%88%86%E8%A7%A3%E5%86%B3%E7%BC%BA%E9%99%B72-%E5%BD%93%E5%A4%A9%E7%B4%AF%E8%AE%A1UV-PV%E7%B1%BB%E6%9B%B2%E7%BA%BF%E4%BD%9C%E4%B8%9A%E7%9A%84%E4%B8%8D%E5%8F%AF%E5%9B%9E%E6%BA%AF"><span class="nav-number">4.2.2.</span> <span class="nav-text">数据按照rowtime进行严格窗口划分解决缺陷2:当天累计UV&#x2F;PV类曲线作业的不可回溯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%97%E5%8F%A3%E8%A7%A6%E5%8F%91%E6%97%B6%E9%97%B4%E7%A1%AE%E5%AE%9A%E8%A7%A3%E5%86%B3%E7%BC%BA%E9%99%B73-%E7%9C%8B%E6%9D%BF%E5%AE%9E%E6%97%B6%E7%BB%B4%E5%BA%A6%E5%8A%A0%E5%92%8C%E4%B8%8E%E6%B1%87%E6%80%BB%E4%B8%8D%E4%B8%80%E8%87%B4"><span class="nav-number">4.2.3.</span> <span class="nav-text">窗口触发时间确定解决缺陷3:看板实时维度加和与汇总不一致</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
